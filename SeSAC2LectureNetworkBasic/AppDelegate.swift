@@ -8,14 +8,32 @@
 import UIKit
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // 2. 노티 제거
+        // allremove : 이전에 온 것만 지움
+        // pending : 이전에 온 것, 앞으로 올 것 모두 지움
+        UNUserNotificationCenter.current().removeAllDeliveredNotifications()
+        
+        // delegate 연결
+        UNUserNotificationCenter.current().delegate = self
+        
+        
         return true
     }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
+        
+        // ios 14 기준 버전별 분기처리해줄 수 있음
+//        completionHandler([.alert , .badge, .sound]) alert이 list와 banner로 나뉨
+        completionHandler([.list, .banner, .badge, .sound])
+    }
+    
 
     // MARK: UISceneSession Lifecycle
 

@@ -7,15 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E0E64E828935D4500773CD9 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0E64E728935D4500773CD9 /* LocationViewController.swift */; };
+		0E0E64EB2893854500773CD9 /* KyoboHandwriting2020pdy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0E0E64EA2893854500773CD9 /* KyoboHandwriting2020pdy.otf */; };
 		0E30A6652890DD84002A8769 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6642890DD84002A8769 /* AppDelegate.swift */; };
 		0E30A6672890DD84002A8769 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6662890DD84002A8769 /* SceneDelegate.swift */; };
 		0E30A6692890DD84002A8769 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6682890DD84002A8769 /* ViewController.swift */; };
 		0E30A66C2890DD84002A8769 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E30A66A2890DD84002A8769 /* Main.storyboard */; };
 		0E30A66E2890DD86002A8769 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E30A66D2890DD86002A8769 /* Assets.xcassets */; };
 		0E30A6712890DD86002A8769 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E30A66F2890DD86002A8769 /* LaunchScreen.storyboard */; };
+		0E30A6792890E1FC002A8769 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6782890E1FC002A8769 /* SearchViewController.swift */; };
+		0E30A67C2890E4CF002A8769 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A67A2890E4CF002A8769 /* ListTableViewCell.swift */; };
+		0E30A67D2890E4CF002A8769 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E30A67B2890E4CF002A8769 /* ListTableViewCell.xib */; };
+		0E30A6A428920CE4002A8769 /* ViewPresentableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A328920CE4002A8769 /* ViewPresentableProtocol.swift */; };
+		0E30A6A628922372002A8769 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A528922372002A8769 /* LottoViewController.swift */; };
+		0E30A6A828923061002A8769 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A728923061002A8769 /* TranslateViewController.swift */; };
+		0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A928923AA5002A8769 /* WebViewController.swift */; };
+		0EB7C0F5289752C9000EFF71 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */; };
+		0EB7C0F8289757B2000EFF71 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F7289757B2000EFF71 /* Constant.swift */; };
+		0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */; };
+		0EB7C0FD28977CE2000EFF71 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C0FC28977CE2000EFF71 /* Alamofire */; };
+		0EB7C10028977CFD000EFF71 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C0FF28977CFD000EFF71 /* SwiftyJSON */; };
+		0EB7C1032897AA62000EFF71 /* LottoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C1022897AA62000EFF71 /* LottoResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E0E64E728935D4500773CD9 /* LocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		0E0E64EA2893854500773CD9 /* KyoboHandwriting2020pdy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KyoboHandwriting2020pdy.otf; sourceTree = "<group>"; };
 		0E30A6612890DD84002A8769 /* SeSAC2LectureNetworkBasic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeSAC2LectureNetworkBasic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E30A6642890DD84002A8769 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E30A6662890DD84002A8769 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +41,17 @@
 		0E30A66D2890DD86002A8769 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E30A6702890DD86002A8769 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E30A6722890DD86002A8769 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E30A6782890E1FC002A8769 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0E30A67A2890E4CF002A8769 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		0E30A67B2890E4CF002A8769 /* ListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		0E30A6A328920CE4002A8769 /* ViewPresentableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPresentableProtocol.swift; sourceTree = "<group>"; };
+		0E30A6A528922372002A8769 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
+		0E30A6A728923061002A8769 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		0E30A6A928923AA5002A8769 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
+		0EB7C0F7289757B2000EFF71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		0EB7C1022897AA62000EFF71 /* LottoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,12 +59,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EB7C10028977CFD000EFF71 /* SwiftyJSON in Frameworks */,
+				0EB7C0FD28977CE2000EFF71 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E0E64E92893840000773CD9 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				0E0E64EA2893854500773CD9 /* KyoboHandwriting2020pdy.otf */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		0E30A6582890DD84002A8769 = {
 			isa = PBXGroup;
 			children = (
@@ -58,13 +96,66 @@
 			children = (
 				0E30A6642890DD84002A8769 /* AppDelegate.swift */,
 				0E30A6662890DD84002A8769 /* SceneDelegate.swift */,
-				0E30A6682890DD84002A8769 /* ViewController.swift */,
-				0E30A66A2890DD84002A8769 /* Main.storyboard */,
 				0E30A66D2890DD86002A8769 /* Assets.xcassets */,
-				0E30A66F2890DD86002A8769 /* LaunchScreen.storyboard */,
 				0E30A6722890DD86002A8769 /* Info.plist */,
+				0EB7C1012897AA42000EFF71 /* Data */,
+				0EB7C0F6289757A1000EFF71 /* Constant */,
+				0E0E64E92893840000773CD9 /* Source */,
+				0E30A6AC28927921002A8769 /* Models */,
+				0E30A6AB28927900002A8769 /* Controllers */,
+				0E30A6A228920CA0002A8769 /* Protocol */,
 			);
 			path = SeSAC2LectureNetworkBasic;
+			sourceTree = "<group>";
+		};
+		0E30A6A228920CA0002A8769 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */,
+				0E30A6A328920CE4002A8769 /* ViewPresentableProtocol.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		0E30A6AB28927900002A8769 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0E30A6682890DD84002A8769 /* ViewController.swift */,
+				0E30A6A928923AA5002A8769 /* WebViewController.swift */,
+				0E30A6A728923061002A8769 /* TranslateViewController.swift */,
+				0E30A6A528922372002A8769 /* LottoViewController.swift */,
+				0E30A6782890E1FC002A8769 /* SearchViewController.swift */,
+				0E30A67A2890E4CF002A8769 /* ListTableViewCell.swift */,
+				0E0E64E728935D4500773CD9 /* LocationViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0E30A6AC28927921002A8769 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0E30A67B2890E4CF002A8769 /* ListTableViewCell.xib */,
+				0E30A66A2890DD84002A8769 /* Main.storyboard */,
+				0E30A66F2890DD86002A8769 /* LaunchScreen.storyboard */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0EB7C0F6289757A1000EFF71 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7C0F7289757B2000EFF71 /* Constant.swift */,
+				0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		0EB7C1012897AA42000EFF71 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0EB7C1022897AA62000EFF71 /* LottoResponse.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +174,10 @@
 			dependencies = (
 			);
 			name = SeSAC2LectureNetworkBasic;
+			packageProductDependencies = (
+				0EB7C0FC28977CE2000EFF71 /* Alamofire */,
+				0EB7C0FF28977CFD000EFF71 /* SwiftyJSON */,
+			);
 			productName = SeSAC2LectureNetworkBasic;
 			productReference = 0E30A6612890DD84002A8769 /* SeSAC2LectureNetworkBasic.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +206,10 @@
 				Base,
 			);
 			mainGroup = 0E30A6582890DD84002A8769;
+			packageReferences = (
+				0EB7C0FB28977CE2000EFF71 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0EB7C0FE28977CFD000EFF71 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
 			productRefGroup = 0E30A6622890DD84002A8769 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +225,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E30A6712890DD86002A8769 /* LaunchScreen.storyboard in Resources */,
+				0E30A67D2890E4CF002A8769 /* ListTableViewCell.xib in Resources */,
 				0E30A66E2890DD86002A8769 /* Assets.xcassets in Resources */,
+				0E0E64EB2893854500773CD9 /* KyoboHandwriting2020pdy.otf in Resources */,
 				0E30A66C2890DD84002A8769 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +240,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E30A6692890DD84002A8769 /* ViewController.swift in Sources */,
+				0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */,
+				0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */,
 				0E30A6652890DD84002A8769 /* AppDelegate.swift in Sources */,
+				0E30A6792890E1FC002A8769 /* SearchViewController.swift in Sources */,
+				0EB7C1032897AA62000EFF71 /* LottoResponse.swift in Sources */,
+				0E30A6A628922372002A8769 /* LottoViewController.swift in Sources */,
+				0E0E64E828935D4500773CD9 /* LocationViewController.swift in Sources */,
+				0EB7C0F5289752C9000EFF71 /* ReusableProtocol.swift in Sources */,
 				0E30A6672890DD84002A8769 /* SceneDelegate.swift in Sources */,
+				0E30A6A828923061002A8769 /* TranslateViewController.swift in Sources */,
+				0E30A6A428920CE4002A8769 /* ViewPresentableProtocol.swift in Sources */,
+				0E30A67C2890E4CF002A8769 /* ListTableViewCell.swift in Sources */,
+				0EB7C0F8289757B2000EFF71 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +416,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -332,7 +444,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -358,6 +470,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0EB7C0FB28977CE2000EFF71 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		0EB7C0FE28977CFD000EFF71 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0EB7C0FC28977CE2000EFF71 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EB7C0FB28977CE2000EFF71 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		0EB7C0FF28977CFD000EFF71 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0EB7C0FE28977CFD000EFF71 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0E30A6592890DD84002A8769 /* Project object */;
 }
