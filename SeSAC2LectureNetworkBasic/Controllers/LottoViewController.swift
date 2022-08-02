@@ -22,10 +22,17 @@ class LottoViewController: UIViewController {
     @IBOutlet var lottoNumberList: [UILabel]!
     @IBOutlet weak var bonusNumber: UILabel!
     
+    @IBOutlet weak var dateTitle: UILabel!
+    
+    @IBOutlet weak var background1: UIView!
+    @IBOutlet weak var background2: UIView!
+    
+    
     let numberList: [Int] = Array(1...1025).reversed()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setUI()
         
         numberTextField.textContentType = .oneTimeCode
         
@@ -38,10 +45,46 @@ class LottoViewController: UIViewController {
         requestLotto(number: 986)
     }
     
+    // MARK: - UI 구성
+    
+    func setUI() {
+        view.backgroundColor = .white
+        
+        dateTitle.text = "추첨일자"
+        dateTitle.font = .boldSystemFont(ofSize: 15)
+        dateTitle.textColor = .darkGray
+        
+        background1.backgroundColor = .systemGray5
+        background2.backgroundColor = .systemGray5
+        
+        background1.layer.cornerRadius = 10
+        background2.layer.cornerRadius = 10
+        
+        // 나중에는 숫자 10의자리별로 색상 구별하기
+        lottoNumberList[0].backgroundColor = .red
+        lottoNumberList[1].backgroundColor = .yellow
+        lottoNumberList[2].backgroundColor = .blue
+        lottoNumberList[3].backgroundColor = .green
+        lottoNumberList[4].backgroundColor = .green
+        bonusNumber.backgroundColor = .yellow
+        
+        for i in 0...4 {
+            lottoNumberList[i].textColor = .white
+            lottoNumberList[i].font = .boldSystemFont(ofSize: 10)
+        }
+        
+        bonusNumber.textColor = .white
+        bonusNumber.font = .boldSystemFont(ofSize: 10)
+
+    }
+    
+    
+    
+    // MARK: - 데이터 통신
     func requestLotto(number: Int) {
         
         // AF: 200~299 status code means success usually
-        let url = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber&drwNo=\(number)"
+        let url = "\(EndPoint.lottoURL)&drwNo=\(number)"
         
         AF.request(url,
                    method: .get)
@@ -91,12 +134,8 @@ extension LottoViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         
-//        requestLotto(number: numberList[row])
-//        numberTextField.text = "\(numberList[row])회차" // 얘는 이제 필요없음
-        
         // picker로 선택한 회차에 대한 정보를 통신해서 보여주는 함수
         requestLotto(number: numberList[row])
-        
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {

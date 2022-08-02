@@ -7,6 +7,27 @@
 
 import Foundation
 
+struct APIKey {
+    static let BOXOFFICE = "f5eef3421c602c6cb7ea224104795888"
+    
+    static let NAVER_ID = "eLtcs2NG7VNTMuWN4O1d"
+    static let NAVER_SECRET = "R0sJLqgLKL"
+    
+}
+
+
+struct EndPoint {
+    static let boxOfficeURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
+    static let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber"
+    static let translateURL = "https://openapi.naver.com/v1/papago/n2mt"
+}
+
+
+
+
+
+
+
 //enum StoryboardName {
 //    case Main
 //    case Search
@@ -18,8 +39,7 @@ struct StoryboardName {
     
     // 접근제어를 통해 초기화 방지 ->  이거를 추가해서 구조체를 사용해도 되지만, 이것마저도 귀찮을 때가 있음.
     private init() {
-        
-        
+    
     }
     
     static let main = "Main"

@@ -28,6 +28,7 @@
 		0EB7C0FD28977CE2000EFF71 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C0FC28977CE2000EFF71 /* Alamofire */; };
 		0EB7C10028977CFD000EFF71 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 0EB7C0FF28977CFD000EFF71 /* SwiftyJSON */; };
 		0EB7C1032897AA62000EFF71 /* LottoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C1022897AA62000EFF71 /* LottoResponse.swift */; };
+		0EB7C13A2898BD45000EFF71 /* BoxOfficeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C1392898BD45000EFF71 /* BoxOfficeModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		0EB7C0F7289757B2000EFF71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
 		0EB7C1022897AA62000EFF71 /* LottoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoResponse.swift; sourceTree = "<group>"; };
+		0EB7C1392898BD45000EFF71 /* BoxOfficeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoxOfficeModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				0EB7C1022897AA62000EFF71 /* LottoResponse.swift */,
+				0EB7C1392898BD45000EFF71 /* BoxOfficeModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 				0E30A6692890DD84002A8769 /* ViewController.swift in Sources */,
 				0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */,
 				0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */,
+				0EB7C13A2898BD45000EFF71 /* BoxOfficeModel.swift in Sources */,
 				0E30A6652890DD84002A8769 /* AppDelegate.swift in Sources */,
 				0E30A6792890E1FC002A8769 /* SearchViewController.swift in Sources */,
 				0EB7C1032897AA62000EFF71 /* LottoResponse.swift in Sources */,

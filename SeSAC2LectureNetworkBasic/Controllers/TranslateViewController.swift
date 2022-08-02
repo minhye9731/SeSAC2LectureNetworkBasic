@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 // UIButton, UITextField > 액션 연결 가능
 // UITextView, UISearchBar, UIPickerView > 액션 연결 불가
@@ -25,9 +27,44 @@ class TranslateViewController: UIViewController {
         userInputTextView.delegate = self
         
         userInputTextView.text = textViewPlaceholder
-        userInputTextView.textColor = .lightGray
+        userInputTextView.textColor = .darkGray
         
         userInputTextView.font = UIFont(name: "KyoboHandwriting2020", size: 17)
+        
+        requestTranslatedData()
+    }
+    
+    // 네트워크관련 코드 필요
+    func requestTranslatedData() {
+        
+        let url = EndPoint.translateURL
+        
+        let parameter = ["source": "ko", "target": "it", "text": "안녕하세요 저는 앱 개발자를 꿈꾸는 사람입니다."]
+        
+        let header: HTTPHeaders = ["X-Naver-Client-Id": APIKey.NAVER_ID, "X-Naver-Client-Secret": APIKey.NAVER_SECRET]
+
+        
+        AF.request(url, method: .post, parameters: parameter, headers: header).validate(statusCode: 200..<500).responseJSON { response in
+            switch response.result {
+            case .success(let value) :
+                let json = JSON(value)
+                print("JSON: \(json)")
+                
+                let statusCode = response.response?.statusCode ?? 500
+                
+                if statusCode == 200 {
+                    self.userInputTextView.text = "\(json["message"]["result"]["translatedText"].stringValue)"
+                } else {
+                    self.userInputTextView.text = json["errorMessage"].stringValue
+                }
+    
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+        
     }
     
 
