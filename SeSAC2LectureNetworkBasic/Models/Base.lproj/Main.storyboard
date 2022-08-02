@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gRO-of-RUl">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -208,40 +208,61 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vra-0S-cIa">
-                                <rect key="frame" x="20" y="94" width="374" height="200"/>
+                                <rect key="frame" x="20" y="92" width="374" height="270"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="MU2-Ad-d6F"/>
+                                    <constraint firstAttribute="height" constant="270" id="MU2-Ad-d6F"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-zc-7zL">
-                                <rect key="frame" x="66" y="459" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sdG-zc-7zL">
+                                <rect key="frame" x="20" y="534" width="374" height="300"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="8IK-29-GAo"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMk-It-ohV">
+                                <rect key="frame" x="157" y="398" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="VgM-AG-kTb"/>
+                                    <constraint firstAttribute="width" constant="100" id="fPH-2L-l3c"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <action selector="translateButtonTapped:" destination="gRO-of-RUl" eventType="touchUpInside" id="n8H-kT-21T"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hJl-Yp-3v1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="hJl-Yp-3v1" firstAttribute="trailing" secondItem="sdG-zc-7zL" secondAttribute="trailing" constant="20" id="0lW-f3-D73"/>
                             <constraint firstItem="vra-0S-cIa" firstAttribute="leading" secondItem="hJl-Yp-3v1" secondAttribute="leading" constant="20" id="Iud-QE-W0Y"/>
+                            <constraint firstItem="aMk-It-ohV" firstAttribute="centerX" secondItem="aGI-xT-7gw" secondAttribute="centerX" id="WEK-BK-8PL"/>
+                            <constraint firstItem="sdG-zc-7zL" firstAttribute="leading" secondItem="hJl-Yp-3v1" secondAttribute="leading" constant="20" id="cqz-C0-P28"/>
+                            <constraint firstItem="aMk-It-ohV" firstAttribute="centerY" secondItem="aGI-xT-7gw" secondAttribute="centerY" id="f3f-zz-Srx"/>
                             <constraint firstItem="hJl-Yp-3v1" firstAttribute="trailing" secondItem="vra-0S-cIa" secondAttribute="trailing" constant="20" id="rS2-mK-6kT"/>
-                            <constraint firstItem="vra-0S-cIa" firstAttribute="top" secondItem="hJl-Yp-3v1" secondAttribute="top" constant="50" id="vL2-3z-S2j"/>
+                            <constraint firstItem="sdG-zc-7zL" firstAttribute="top" secondItem="aMk-It-ohV" secondAttribute="bottom" constant="36" id="yr8-gM-Np8"/>
+                            <constraint firstItem="aMk-It-ohV" firstAttribute="top" secondItem="vra-0S-cIa" secondAttribute="bottom" constant="36" id="zwN-lw-YzR"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="exchangeButton" destination="aMk-It-ohV" id="ldK-NC-NY0"/>
                         <outlet property="userInputTextView" destination="vra-0S-cIa" id="5lc-F7-2oW"/>
+                        <outlet property="userOutputTextView" destination="sdG-zc-7zL" id="N0P-Sl-YcB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="og7-2r-xli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="68"/>
+            <point key="canvasLocation" x="1344.9275362318842" y="67.633928571428569"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="p3w-oT-KGP">
