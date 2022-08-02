@@ -33,11 +33,7 @@ extension UIViewController {
     }
 }
 
-
-
 class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
-//    static let identifier: String = "SearchViewController"
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
@@ -69,20 +65,32 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         searchTableView.register(UINib(nibName: ListTableViewCell.reuseIdentifier, bundle: nil), forCellReuseIdentifier: ListTableViewCell.reuseIdentifier)
         
         searchBar.delegate = self
-        requestBoxOffice(text: "20220801")
+        
+        // 여기 일자에 하드코딩 대신 어제일자를 구하는 함수를 넣자
+        requestBoxOffice(text: getYesterday())
+        print(getYesterday())
 
     }
 
+    // extension에서 구한 어제 일자를 yyyyMMdd 양식 맞추기
+    func getYesterday() -> String {
+        
+        let format = DateFormatter()
+        format.dateFormat = #"yyyyMMdd"#
+        format.locale = Locale(identifier: Locale.current.identifier)
+        format.timeZone = TimeZone(identifier: TimeZone.current.identifier)
+        
+        let yesterday = Date().dayBefore
+        
+        return format.string(from: yesterday)
+    }
+    
+    
     func configureView() {
         searchTableView.backgroundColor = .clear
         searchTableView.separatorColor = .clear
         searchTableView.rowHeight = 60
     }
-
-    func configureLabel() {
-        
-    }
-
 
     func requestBoxOffice(text: String) {
         
@@ -148,7 +156,6 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
         return cell
     }
-
     
     
 }
@@ -157,5 +164,13 @@ extension SearchViewController: UISearchBarDelegate {
     
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         requestBoxOffice(text: searchBar.text!) // 옵셔널 바인딩, 8글자, 숫자, 날짜로 변경 시 유효한 형태의 값만 감지 등
+    }
+}
+
+
+// Calendar로 어제 날짜 구하는 연산 프로퍼티 생성
+extension Date {
+    var dayBefore: Date {
+        return Calendar.current.date(byAdding: .day, value: -1, to: self)!
     }
 }
