@@ -220,21 +220,20 @@
             </objects>
             <point key="canvasLocation" x="544.92753623188412" y="67.633928571428569"/>
         </scene>
-        <!--Translate View Controller-->
-        <scene sceneID="doF-cu-UUR">
+        <!--View Controller-->
+        <scene sceneID="ofe-ie-wOO">
             <objects>
-                <viewController storyboardIdentifier="TranslateViewController" id="gRO-of-RUl" customClass="TranslateViewController" customModule="SeSAC2LectureNetworkBasic" customModuleProvider="target" sceneMemberID="viewController">
-                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="iAu-FF-yHV">
+                <viewController id="pJO-12-RZx" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WYd-lP-89v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="M6u-kb-mrm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="og7-2r-xli" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l8j-Wc-WL1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1344.9275362318842" y="67.633928571428569"/>
+            <point key="canvasLocation" x="1353" y="69"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="p3w-oT-KGP">
@@ -339,9 +338,31 @@
                     <view key="view" contentMode="scaleToFill" id="gXS-lV-i9G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bQD-jN-95w">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Wtx-JM-qWc">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="NNX-qQ-lRQ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="NNX-qQ-lRQ" firstAttribute="trailing" secondItem="bQD-jN-95w" secondAttribute="trailing" id="blF-iR-5aF"/>
+                            <constraint firstItem="bQD-jN-95w" firstAttribute="leading" secondItem="NNX-qQ-lRQ" secondAttribute="leading" id="dEq-UZ-eei"/>
+                            <constraint firstItem="bQD-jN-95w" firstAttribute="top" secondItem="NNX-qQ-lRQ" secondAttribute="top" id="fD9-M0-CyF"/>
+                            <constraint firstItem="NNX-qQ-lRQ" firstAttribute="bottom" secondItem="bQD-jN-95w" secondAttribute="bottom" id="lUu-id-BxI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="bQD-jN-95w" id="HCi-Ky-bis"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nAh-Au-OrU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

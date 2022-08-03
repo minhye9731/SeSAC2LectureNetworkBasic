@@ -35,8 +35,8 @@ class TranslateViewController: UIViewController {
     
     
     func setUI() {
-        userInputTextView.backgroundColor = .systemGray3
         userInputTextView.text = textViewPlaceholder
+        userInputTextView.backgroundColor = .systemGray3
         userInputTextView.textColor = .black
         userInputTextView.font = UIFont(name: "KyoboHandwriting2020", size: 17)
         

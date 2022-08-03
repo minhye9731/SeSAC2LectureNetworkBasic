@@ -23,6 +23,9 @@
 		0E30A6A828923061002A8769 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A728923061002A8769 /* TranslateViewController.swift */; };
 		0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A928923AA5002A8769 /* WebViewController.swift */; };
 		0E4A958F289A094B00FA3ACC /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */; };
+		0E4A9592289A5F8400FA3ACC /* ImageSearchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A9590289A5F8400FA3ACC /* ImageSearchCollectionViewCell.swift */; };
+		0E4A9593289A5F8400FA3ACC /* ImageSearchCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0E4A9591289A5F8400FA3ACC /* ImageSearchCollectionViewCell.xib */; };
+		0E4A9595289A6B8E00FA3ACC /* snackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A9594289A6B8E00FA3ACC /* snackModel.swift */; };
 		0EB7C0F5289752C9000EFF71 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */; };
 		0EB7C0F8289757B2000EFF71 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F7289757B2000EFF71 /* Constant.swift */; };
 		0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */; };
@@ -52,6 +55,9 @@
 		0E30A6A728923061002A8769 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		0E30A6A928923AA5002A8769 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
+		0E4A9590289A5F8400FA3ACC /* ImageSearchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchCollectionViewCell.swift; sourceTree = "<group>"; };
+		0E4A9591289A5F8400FA3ACC /* ImageSearchCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageSearchCollectionViewCell.xib; sourceTree = "<group>"; };
+		0E4A9594289A6B8E00FA3ACC /* snackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = snackModel.swift; sourceTree = "<group>"; };
 		0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
 		0EB7C0F7289757B2000EFF71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
@@ -143,7 +149,9 @@
 				0E30A67B2890E4CF002A8769 /* ListTableViewCell.xib */,
 				0E30A66A2890DD84002A8769 /* Main.storyboard */,
 				0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */,
+				0E4A9590289A5F8400FA3ACC /* ImageSearchCollectionViewCell.swift */,
 				0E30A66F2890DD86002A8769 /* LaunchScreen.storyboard */,
+				0E4A9591289A5F8400FA3ACC /* ImageSearchCollectionViewCell.xib */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -162,6 +170,7 @@
 			children = (
 				0EB7C1022897AA62000EFF71 /* LottoResponse.swift */,
 				0EB7C1392898BD45000EFF71 /* BoxOfficeModel.swift */,
+				0E4A9594289A6B8E00FA3ACC /* snackModel.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -238,6 +247,7 @@
 				0E30A67D2890E4CF002A8769 /* ListTableViewCell.xib in Resources */,
 				0E30A66E2890DD86002A8769 /* Assets.xcassets in Resources */,
 				0E0E64EB2893854500773CD9 /* KyoboHandwriting2020pdy.otf in Resources */,
+				0E4A9593289A5F8400FA3ACC /* ImageSearchCollectionViewCell.xib in Resources */,
 				0E30A66C2890DD84002A8769 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,6 +265,7 @@
 				0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */,
 				0EB7C13A2898BD45000EFF71 /* BoxOfficeModel.swift in Sources */,
 				0E30A6652890DD84002A8769 /* AppDelegate.swift in Sources */,
+				0E4A9595289A6B8E00FA3ACC /* snackModel.swift in Sources */,
 				0E30A6792890E1FC002A8769 /* SearchViewController.swift in Sources */,
 				0EB7C1032897AA62000EFF71 /* LottoResponse.swift in Sources */,
 				0E30A6A628922372002A8769 /* LottoViewController.swift in Sources */,
@@ -264,6 +275,7 @@
 				0E30A6A828923061002A8769 /* TranslateViewController.swift in Sources */,
 				0E30A6A428920CE4002A8769 /* ViewPresentableProtocol.swift in Sources */,
 				0E30A67C2890E4CF002A8769 /* ListTableViewCell.swift in Sources */,
+				0E4A9592289A5F8400FA3ACC /* ImageSearchCollectionViewCell.swift in Sources */,
 				0EB7C0F8289757B2000EFF71 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
