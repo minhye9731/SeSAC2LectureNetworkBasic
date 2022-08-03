@@ -12,5 +12,11 @@ class ListTableViewCell: UITableViewCell {
 //    static let identifier: String = "ListTableViewCell"
     
     @IBOutlet weak var titleLabel: UILabel!
-    
 }
+
+
+
+
+
+
+

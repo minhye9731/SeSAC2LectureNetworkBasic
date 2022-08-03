@@ -41,21 +41,17 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     // box 배열
     var list: [BoxOfficeModel] = []
     
-//    var navigationTitleString: String {
-//        get {
-//            return "대장님의 다마고치"
-//        }
-//        set {
-//            title = newValue
-//        }
-//    }
+    // 타입 어노테이션 vs. 타입 추론 => 누가 더 속도가 빠를까?
+    // wwdc what's new in swift : 기술이 점점 더 좋아져서 이제는 타입추론이 더 빠를수도 있음
+    var nickname: String = ""
+    var username = ""
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureView()
         
-        searchTableView.backgroundColor = .clear
         // 연결고리 작업 : 테이블뷰가 해야 할 역할 > 뷰 컨트롤러에게 요청
         searchTableView.delegate = self // self는 SearchViewController의 인스턴스 자체를 의미
         searchTableView.dataSource = self
@@ -69,7 +65,21 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         // 여기 일자에 하드코딩 대신 어제일자를 구하는 함수를 넣자
         requestBoxOffice(text: getYesterday())
         print(getYesterday())
-
+        
+        // Date, DateFormatter Calendar 이 세개가 어떤 역할을 각각하는지 찾아봐라.
+        // 어제일자 구하는거 dateformatter로 구하는방법도 있음. 하지만 그닥 추천안함(calendar를 추천)
+//        let format = DateFormatter()
+//        format.dateFormat = "yyyyMMdd"
+//        let yesterday = (   - 864?00) // 방법1
+//        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date()) // 방법2
+//        let dateResult = format.starts(with: yesterday!)
+//        requestBoxOffice(text: dateResult)
+        
+        // 네트워크 통신: 서버 점검 등에 대한 예외 처리
+        // 네트워크가 느린 환경 테스트 -> 설정 가능 옵션 가능
+        // : 실기기 테스트 시 Condition 조절 가능!
+        // : 시뮬레이터에서도 가능! (추가 설치)
+        // window > devices and simulators
     }
 
     // extension에서 구한 어제 일자를 yyyyMMdd 양식 맞추기
@@ -169,6 +179,7 @@ extension SearchViewController: UISearchBarDelegate {
 
 
 // Calendar로 어제 날짜 구하는 연산 프로퍼티 생성
+// 사용자에 따라 위치와 시간을 상세설정해둔게 calendar임
 extension Date {
     var dayBefore: Date {
         return Calendar.current.date(byAdding: .day, value: -1, to: self)!

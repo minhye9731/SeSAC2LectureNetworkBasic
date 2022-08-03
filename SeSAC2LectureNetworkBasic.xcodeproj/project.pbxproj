@@ -22,6 +22,7 @@
 		0E30A6A628922372002A8769 /* LottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A528922372002A8769 /* LottoViewController.swift */; };
 		0E30A6A828923061002A8769 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A728923061002A8769 /* TranslateViewController.swift */; };
 		0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E30A6A928923AA5002A8769 /* WebViewController.swift */; };
+		0E4A958F289A094B00FA3ACC /* ImageSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */; };
 		0EB7C0F5289752C9000EFF71 /* ReusableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */; };
 		0EB7C0F8289757B2000EFF71 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F7289757B2000EFF71 /* Constant.swift */; };
 		0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */; };
@@ -50,6 +51,7 @@
 		0E30A6A528922372002A8769 /* LottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottoViewController.swift; sourceTree = "<group>"; };
 		0E30A6A728923061002A8769 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
 		0E30A6A928923AA5002A8769 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSearchViewController.swift; sourceTree = "<group>"; };
 		0EB7C0F4289752C9000EFF71 /* ReusableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableProtocol.swift; sourceTree = "<group>"; };
 		0EB7C0F7289757B2000EFF71 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		0EB7C0F928975FC0000EFF71 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			children = (
 				0E30A67B2890E4CF002A8769 /* ListTableViewCell.xib */,
 				0E30A66A2890DD84002A8769 /* Main.storyboard */,
+				0E4A958E289A094B00FA3ACC /* ImageSearchViewController.swift */,
 				0E30A66F2890DD86002A8769 /* LaunchScreen.storyboard */,
 			);
 			path = Models;
@@ -248,6 +251,7 @@
 			files = (
 				0E30A6692890DD84002A8769 /* ViewController.swift in Sources */,
 				0EB7C0FA28975FC0000EFF71 /* UserDefaultsHelper.swift in Sources */,
+				0E4A958F289A094B00FA3ACC /* ImageSearchViewController.swift in Sources */,
 				0E30A6AA28923AA5002A8769 /* WebViewController.swift in Sources */,
 				0EB7C13A2898BD45000EFF71 /* BoxOfficeModel.swift in Sources */,
 				0E30A6652890DD84002A8769 /* AppDelegate.swift in Sources */,
