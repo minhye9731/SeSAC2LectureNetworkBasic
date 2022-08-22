@@ -7,17 +7,8 @@
 
 import Foundation
 
-struct APIKey {
-    static let BOXOFFICE = "f5eef3421c602c6cb7ea224104795888"
-    
-    static let NAVER_ID = "eLtcs2NG7VNTMuWN4O1d"
-    static let NAVER_SECRET = "R0sJLqgLKL"
-    
-}
-
-
+// 이거 리팩토링 후에 삭제 예정
 struct EndPoint {
-    static let boxOfficeURL = "https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?"
     
     static let lottoURL = "https://www.dhlottery.co.kr/common.do?method=getLottoNumber"
     
@@ -25,8 +16,6 @@ struct EndPoint {
     
     static let imageSearchURL = "https://openapi.naver.com/v1/search/image.json?"
 }
-
-
 
 
 

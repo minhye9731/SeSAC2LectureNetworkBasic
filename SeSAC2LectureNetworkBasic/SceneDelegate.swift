@@ -10,13 +10,21 @@ import UIKit
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
-
+    
+    // 앱 실행하자마자 api통신해서 realm에 담기??
+//    let localRealm = try! Realm()
+//    var tasks: Results<UserBoxOfficeList>!
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
-        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
-        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+
         guard let _ = (scene as? UIWindowScene) else { return }
+        
+        // 배열의 Realm 데이터 초기화
+//        tasks = localRealm.objects(UserBoxOfficeList.self).sorted(byKeyPath: "releaseDate", ascending: false)
+        
+        // 앱 처음실행시 API 통신해서 Realm에 담기?? 여기서? 그럼 tasks 데이터를 어떻게 뷰컨에 넘겨주냐.. 여기 아닌 것 같아
+//        BOXOFFICEAPIManager.shared.fetchBOXOFFICEAPI(type: .boxOfficeURL, text: "20220801", tasks: tasks, localRealm: localRealm)
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

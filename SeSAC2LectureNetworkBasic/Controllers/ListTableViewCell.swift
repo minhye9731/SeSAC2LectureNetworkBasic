@@ -12,6 +12,13 @@ class ListTableViewCell: UITableViewCell {
 //    static let identifier: String = "ListTableViewCell"
     
     @IBOutlet weak var titleLabel: UILabel!
+    
+    func configureUI() {
+        backgroundColor = .clear
+        titleLabel.font = .boldSystemFont(ofSize: 18)
+    }
+    
+    
 }
 
 
