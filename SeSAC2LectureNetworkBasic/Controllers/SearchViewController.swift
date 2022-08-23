@@ -123,11 +123,11 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 }
                 
                 self.searchTableView.reloadData()
-                self.hud.dismiss()
+                self.hud.dismiss() // 이것도 넘겨야 하는데
                 
                 
             case .failure(let error):
-                self.hud.dismiss()
+                self.hud.dismiss() // 이것도 넘겨야 하는데
                 print(error)
             }
         }
